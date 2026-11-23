@@ -1,0 +1,24 @@
+КУТ БИЛИМ — обновление 17.11.2026
+(текст о приказе №691 в разделе «Платформа боюнча»; приложение версии 1.0.1)
+
+Содержимое
+  web/                    новый сайт      -> /srv/kutbilim/web/
+  downloads/kutbilim.apk  новое Android-приложение -> /srv/kutbilim/downloads/kutbilim.apk
+
+1) С Mac (из папки deploy):
+     scp -r update-2026-11-17 sysadmin@10.3.14.15:~/
+
+2) На сервере:
+     ssh sysadmin@10.3.14.15
+     cd ~/update-2026-11-17
+     sudo rsync -a --delete web/ /srv/kutbilim/web/
+     sudo install -m 644 downloads/kutbilim.apk /srv/kutbilim/downloads/kutbilim.apk
+
+   Перезапуск не нужен: backend не менялся, Nginx сразу отдаёт новые файлы.
+
+3) Проверка:
+     открыть https://elkitep.gps.gov.kg/#/about  (обновить страницу Ctrl+F5)
+     скачать APK с главной страницы и установить поверх старого приложения
+
+Пользователям Android нужно заново скачать APK с сайта и установить поверх —
+вход и данные сохранятся.

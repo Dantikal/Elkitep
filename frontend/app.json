@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "КУТ БИЛИМ 1.0",
+    "slug": "kut-bilim",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "kg.kutbilim.mobile"
+    },
+    "android": {
+      "package": "kg.kutbilim.mobile",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#00402b"
+      },
+      "versionCode": 2
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Профиль үчүн сүрөт тандаңыз.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      "expo-secure-store",
+      "expo-font"
+    ],
+    "icon": "./assets/icon.png",
+    "extra": {
+      "eas": {
+        "projectId": "fc9ea366-314a-4b08-9887-05f03be281a8"
+      }
+    },
+    "owner": "dantikal"
+  }
+}

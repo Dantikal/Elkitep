@@ -1,0 +1,29 @@
+node_modules/
+.expo/
+.venv/
+__pycache__/
+*.pyc
+.env
+!.env.example
+db.sqlite3
+media/
+dist/
+
+# secrets / certs
+*.key
+*.pem
+*.crt
+2026/
+deploy/**/config/*.env
+*.env
+!*.env.example
+
+# build artifacts
+*.apk
+*.aab
+*.sqlite3
+deploy/**/web/
+deploy/**/downloads/
+.DS_Store
+frontend/android/
+frontend/ios/
